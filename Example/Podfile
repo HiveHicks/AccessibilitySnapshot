@@ -15,7 +15,7 @@ target 'AccessibilitySnapshotDemo' do
 
 		# SnapshotTesting dropped support for building with Xcode 10 in 1.8.0, so pin the version to 1.7 in order to
 		# run our tests against Xcode 10.
-		pod 'SnapshotTesting', '= 1.7.2'
+		pod 'SnapshotTesting', :git => 'git@github.com:pimms/swift-snapshot-testing.git', :branch => 'optimization'
 	end
 
 	target 'UnitTests' do
